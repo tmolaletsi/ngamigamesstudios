@@ -139,7 +139,25 @@
                 </button>
             </div>
             
-            <!-- 3. FEATURED CAROUSEL / LARGE BANNER -->
+            <!-- 3. AD BANNER 728x90 (Desktop Only) -->
+            <div class="hidden md:block bg-nova-mid rounded-lg p-3 text-center mx-auto max-w-4xl shadow-inner">
+                <div class="text-xs text-gray-500 mb-1">Advertisement</div>
+                <div id="banner-ad-728x90">
+                    <!-- User-provided Ad Script -->
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '6336e3eb2084f2ce6e4bc1f47a2aff9a',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/6336e3eb2084f2ce6e4bc1f47a2aff9a/invoke.js"></script>
+                </div>
+            </div>
+
+            <!-- 4. FEATURED CAROUSEL / LARGE BANNER -->
             <div class="bg-nova-mid p-4 sm:p-6 rounded-xl shadow-2xl relative overflow-hidden">
                 <div class="grid md:grid-cols-3 gap-6 items-center">
                     <!-- Image/Video Area -->
@@ -169,7 +187,7 @@
                 </div>
             </div>
             
-            <!-- 4. TRENDING GAMES SECTION (Horizontal Scroll) -->
+            <!-- 5. TRENDING GAMES SECTION (Horizontal Scroll) -->
             <div class="space-y-4">
                 <h2 class="text-2xl font-bold text-white border-b border-nova-mid pb-2">🔥 Trending Now</h2>
                 <div class="flex space-x-6 pb-4 overflow-x-auto horizontal-scroll scrollbar-dark">
@@ -223,13 +241,13 @@
                 </div>
             </div>
 
-            <!-- 5. DEALS SECTION (Grid Layout) - REMOVED -->
+            <!-- 6. DEALS SECTION (Grid Layout) - REMOVED -->
             
         </section>
 
     </main>
     
-    <!-- 6. FOOTER -->
+    <!-- 7. FOOTER -->
     <footer class="bg-nova-mid mt-10 p-8">
         <div class="max-w-7xl mx-auto text-center text-gray-400 text-sm">
             <p class="mb-2">© 2025 Ngami Game Studios. All rights reserved. All trademarks are property of their respective owners.</p>
