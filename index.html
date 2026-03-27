@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ngami Play | Your Next Game Universe</title>
+    <title>Ngami Play | Your Next 3D Game Universe</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configure Tailwind for custom theme and font -->
@@ -194,13 +194,14 @@
 
             <!-- MHELE GAME DETAILS PAGE -->
             <div id="mhele-details-page" class="hidden space-y-10">
-                <div class="relative w-full rounded-2xl overflow-hidden bg-black border border-gray-800 aspect-[21/9] shadow-2xl">
-                    <img src="https://i.postimg.cc/hGsdXMgj/Mhele.png" class="w-full h-full object-cover opacity-40">
+                <!-- Mobile Fix: Use min-h-64 or flex-grow logic to ensure content is never cut -->
+                <div class="relative w-full rounded-2xl overflow-hidden bg-black border border-gray-800 min-h-[300px] md:aspect-[21/9] shadow-2xl">
+                    <img src="https://i.postimg.cc/hGsdXMgj/Mhele.png" class="absolute inset-0 w-full h-full object-cover opacity-40">
                     <div class="absolute inset-0 bg-gradient-to-t from-nova-dark via-transparent to-transparent"></div>
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                        <img src="https://i.postimg.cc/hGsdXMgj/Mhele.png" alt="Mhele Logo" class="h-32 md:h-48 w-auto object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.2)] mb-8">
-                        <button class="px-12 py-4 bg-nova-accent text-nova-dark font-black rounded-xl hover:bg-green-400 hover:scale-105 transition-all shadow-xl shadow-nova-accent/30 uppercase tracking-widest text-lg flex items-center justify-center space-x-3">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21l-8-8h5V3h6v10h5l-8 8z"/></svg>
+                    <div class="relative z-10 flex flex-col items-center justify-center p-8 text-center h-full">
+                        <img src="https://i.postimg.cc/hGsdXMgj/Mhele.png" alt="Mhele Logo" class="h-24 md:h-48 w-auto object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.2)] mb-8">
+                        <button class="px-10 py-4 bg-nova-accent text-nova-dark font-black rounded-xl hover:bg-green-400 hover:scale-105 transition-all shadow-xl shadow-nova-accent/30 uppercase tracking-widest text-base md:text-lg flex items-center justify-center space-x-3 mb-2">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21l-8-8h5V3h6v10h5l-8 8z"/></svg>
                             <span>Download Game</span>
                         </button>
                     </div>
@@ -237,7 +238,7 @@
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
             <div class="flex items-center mb-4 md:mb-0">
                 <img src="https://i.postimg.cc/2yP9LCmv/Ngami-logo.png" alt="Logo" class="h-6 w-auto mr-3 grayscale opacity-50">
-                <p>© 2025 Ngami Play.</p>
+                <p>© 2025 Ngami Game Studios</p>
             </div>
         </div>
     </footer>
