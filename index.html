@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ngami Game Studios | Your Next Game Universe</title>
+    <title>Ngami Play | Your Next Game Universe</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configure Tailwind for custom theme and font -->
@@ -18,7 +18,7 @@
                         'nova-dark': '#121217',
                         'nova-mid': '#1E293B',
                         'nova-light': '#2D3748',
-                        'nova-accent': '#2DD4BF', // Teal-400
+                        'nova-accent': '#22C55E', // Green-500
                     },
                 }
             }
@@ -46,7 +46,7 @@
             display: none; /* Chrome/Safari */
         }
     </style>
-    <!-- AdSense Head Script (Inserted Here) -->
+    <!-- AdSense Head Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1083284317196321"
       crossorigin="anonymous"></script>
 </head>
@@ -54,15 +54,21 @@
 <body class="bg-nova-dark font-sans text-gray-200 min-h-screen">
 
     <!-- 1. HEADER / NAVIGATION BAR -->
-    <header class="sticky top-0 z-50 bg-nova-mid shadow-lg">
+    <header class="sticky top-0 z-50 bg-nova-mid shadow-lg border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo & Main Links -->
-                <div class="flex items-center space-x-6">
-                    <div class="text-3xl font-extrabold text-nova-accent tracking-wider">
-                        Ngami Game Studios
+                <div class="flex items-center">
+                    <!-- NEW LOGO IMAGE -->
+                    <div class="flex items-center">
+                        <img src="https://i.postimg.cc/2yP9LCmv/Ngami-logo.png" alt="Ngami Play Logo" class="h-10 w-auto object-contain">
                     </div>
-                    <nav class="hidden md:flex space-x-4 text-sm font-semibold">
+                    <!-- TITLE TEXT -->
+                    <div class="text-2xl font-black text-white tracking-tighter uppercase italic ml-3">
+                        Ngami<span class="text-nova-accent">Play</span>
+                    </div>
+                    
+                    <nav class="hidden xl:flex space-x-4 text-sm font-semibold ml-8 border-l border-gray-700 pl-8">
                         <a href="#" class="p-2 hover:text-nova-accent transition duration-150">STORE</a>
                         <a href="#" class="p-2 hover:text-nova-accent transition duration-150">COMMUNITY</a>
                         <a href="#" class="p-2 hover:text-nova-accent transition duration-150">SUPPORT</a>
@@ -80,7 +86,7 @@
                     <!-- User Profile -->
                     <div class="flex items-center space-x-2">
                         <span class="text-sm hidden lg:block">Welcome, Explorer</span>
-                        <button class="w-8 h-8 rounded-full bg-nova-accent flex items-center justify-center text-nova-mid font-bold text-sm hover:ring-2 ring-nova-accent transition duration-150">
+                        <button class="w-8 h-8 rounded-full bg-nova-accent flex items-center justify-center text-nova-dark font-bold text-sm hover:ring-2 ring-nova-accent transition duration-150">
                             E
                         </button>
                     </div>
@@ -92,9 +98,9 @@
     <!-- 2. MAIN CONTENT AREA -->
     <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 grid lg:grid-cols-12 gap-8">
         
-        <!-- SIDEBAR NAVIGATION (lg: block, mobile: collapsed) -->
-        <aside class="lg:col-span-3 bg-nova-mid rounded-lg p-4 h-fit hidden lg:block">
-            <h3 class="text-lg font-bold mb-4 text-nova-accent">BROWSE</h3>
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="lg:col-span-3 bg-nova-mid rounded-lg p-4 h-fit hidden lg:block border border-gray-800 shadow-xl">
+            <h3 class="text-lg font-bold mb-4 text-nova-accent uppercase tracking-widest text-[10px]">Browse</h3>
             <nav class="space-y-2 text-sm">
                 <a href="#" class="flex items-center p-2 rounded-lg bg-gray-700 text-white font-semibold transition duration-150">
                     <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
@@ -114,7 +120,7 @@
                 </a>
             </nav>
             
-            <h3 class="text-lg font-bold my-4 pt-4 border-t border-gray-700 text-nova-accent">GENRES</h3>
+            <h3 class="text-lg font-bold my-4 pt-4 border-t border-gray-700 text-nova-accent uppercase tracking-widest text-[10px]">Genres</h3>
             <div class="flex flex-wrap gap-2 text-xs">
                 <span class="bg-gray-700 px-3 py-1 rounded-full cursor-pointer hover:bg-nova-accent hover:text-nova-dark transition duration-150">Action</span>
                 <span class="bg-gray-700 px-3 py-1 rounded-full cursor-pointer hover:bg-nova-accent hover:text-nova-dark transition duration-150">RPG</span>
@@ -129,9 +135,9 @@
         <!-- MAIN STORE DISPLAY -->
         <section class="lg:col-span-9 space-y-10">
 
-            <!-- NEW: PLATFORM FILTERS -->
+            <!-- PLATFORM FILTERS -->
             <div class="flex flex-wrap gap-4 text-sm font-semibold justify-center sm:justify-start">
-                <button class="px-6 py-2 rounded-full bg-nova-accent text-nova-dark shadow-lg transition duration-200 hover:bg-teal-500 transform hover:scale-[1.03] cursor-pointer">
+                <button class="px-6 py-2 rounded-full bg-nova-accent text-nova-dark shadow-lg transition duration-200 hover:bg-green-600 transform hover:scale-[1.03] cursor-pointer font-bold">
                     PC Games
                 </button>
                 <button class="px-6 py-2 rounded-full bg-nova-mid text-gray-200 border border-gray-600 transition duration-200 hover:bg-gray-700 hover:border-nova-accent cursor-pointer">
@@ -142,11 +148,10 @@
                 </button>
             </div>
             
-            <!-- 3. AD BANNER 728x90 (Desktop Only) -->
-            <div class="hidden md:block bg-nova-mid rounded-lg p-3 text-center mx-auto max-w-4xl shadow-inner">
-                <div class="text-xs text-gray-500 mb-1">Advertisement</div>
+            <!-- AD BANNER 728x90 -->
+            <div class="hidden md:block bg-nova-mid rounded-lg p-3 text-center mx-auto max-w-4xl shadow-inner border border-gray-800">
+                <div class="text-xs text-gray-500 mb-1 font-mono uppercase tracking-tighter">Advertisement</div>
                 <div id="banner-ad-728x90">
-                    <!-- User-provided Ad Script -->
                     <script type="text/javascript">
                         atOptions = {
                             'key' : '6336e3eb2084f2ce6e4bc1f47a2aff9a',
@@ -160,29 +165,26 @@
                 </div>
             </div>
 
-            <!-- 4. FEATURED CAROUSEL / LARGE BANNER -->
-            <div class="bg-nova-mid p-4 sm:p-6 rounded-xl shadow-2xl relative overflow-hidden">
+            <!-- FEATURED CAROUSEL -->
+            <div class="bg-nova-mid p-4 sm:p-6 rounded-xl shadow-2xl relative overflow-hidden border border-gray-800">
                 <div class="grid md:grid-cols-3 gap-6 items-center">
-                    <!-- Image/Video Area -->
                     <div class="md:col-span-2 relative aspect-video rounded-lg overflow-hidden bg-gray-800">
-                        <img src="https://placehold.co/1200x675/1F2937/FFFFFF?text=IRON+AND+HORN+FEATURED+IMAGE" alt="Featured Game Banner" class="w-full h-full object-cover">
+                        <img src="https://placehold.co/1200x675/1F2937/FFFFFF?text=IRON+AND+HORN" alt="Featured Game Banner" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-nova-dark/70 to-transparent"></div>
                     </div>
 
-                    <!-- Details -->
                     <div class="md:col-span-1 p-2">
                         <h2 class="text-3xl font-bold text-white mb-2">Iron and Horn</h2>
-                        <p class="text-nova-accent font-semibold mb-4">COMING SOMI</p>
-                        <p class="text-gray-400 text-sm mb-6">Explore limitless galaxies, build your starfleet, and engage in tactical space combat in this critically acclaimed sci-fi epic. Pre-order bonus included!</p>
+                        <p class="text-nova-accent font-semibold mb-4 italic uppercase tracking-wider">COMING SOON</p>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Explore limitless galaxies and build your starfleet in this upcoming epic 3D game. Experience next-gen tactical combat.</p>
                         
                         <div class="space-y-3">
-                            <span class="block text-xl font-bold text-gray-400">Price Not Yet Set</span>
+                            <span class="block text-xl font-bold text-gray-400">Price TBD</span>
                             <button class="w-full bg-gray-700 text-gray-200 font-bold py-3 rounded-xl transition duration-300 hover:bg-gray-600 hover:shadow-lg flex items-center justify-center space-x-2">
-                                <!-- Heart icon for Wishlist/Follow -->
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                                <span>Add to Wishlist / Follow</span>
+                                <span>Add to Wishlist</span>
                             </button>
-                            <button class="w-full bg-nova-accent text-nova-dark font-semibold py-3 rounded-xl transition duration-300 hover:bg-teal-500">
+                            <button class="w-full bg-nova-accent text-nova-dark font-bold py-3 rounded-xl transition duration-300 hover:bg-green-600">
                                 View Details
                             </button>
                         </div>
@@ -190,76 +192,78 @@
                 </div>
             </div>
             
-            <!-- 5. TRENDING GAMES SECTION (Horizontal Scroll) -->
+            <!-- TRENDING GAMES SECTION -->
             <div class="space-y-4">
-                <h2 class="text-2xl font-bold text-white border-b border-nova-mid pb-2">🔥 Trending Now</h2>
+                <div class="flex items-center justify-between border-b border-gray-800 pb-2">
+                    <h2 class="text-2xl font-bold text-white">🔥 Trending Now</h2>
+                    <a href="#" class="text-nova-accent text-xs font-bold hover:underline">VIEW ALL</a>
+                </div>
                 <div class="flex space-x-6 pb-4 overflow-x-auto horizontal-scroll scrollbar-dark">
-                    <!-- Game Card 1: Mhele -->
-                    <div class="flex-shrink-0 w-64 bg-nova-mid rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <!-- Game Card 1 -->
+                    <div class="flex-shrink-0 w-64 bg-nova-mid rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 cursor-pointer border border-gray-800">
                         <img src="https://placehold.co/600x337/EF4444/FFFFFF?text=MHELE" alt="Mhele Thumbnail" class="w-full h-36 object-cover">
                         <div class="p-4">
                             <h3 class="text-lg font-semibold truncate text-white">Mhele</h3>
                             <p class="text-xs text-gray-400 mb-2">Horror, Survival</p>
                             <div class="flex justify-end items-center mt-3">
-                                <span class="text-xs text-gray-300 bg-red-800/50 px-2 py-0.5 rounded-full">95% Positive</span>
+                                <span class="text-xs text-gray-300 bg-red-800/50 px-2 py-0.5 rounded-full border border-red-700">95% Positive</span>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Game Card 2: Motshe -->
-                    <div class="flex-shrink-0 w-64 bg-nova-mid rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 cursor-pointer">
-                        <img src="https://placehold.co/600x337/10B981/FFFFFF?text=MOTSHE+STRATEGY" alt="Motshe Thumbnail" class="w-full h-36 object-cover">
+                    <!-- Game Card 2 -->
+                    <div class="flex-shrink-0 w-64 bg-nova-mid rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 cursor-pointer border border-gray-800">
+                        <img src="https://placehold.co/600x337/10B981/FFFFFF?text=KIKA+LE+MOTSHE" alt="Motshe Thumbnail" class="w-full h-36 object-cover">
                         <div class="p-4">
                             <h3 class="text-lg font-semibold truncate text-white">Motshe</h3>
                             <p class="text-xs text-gray-400 mb-2">Strategy, Puzzle</p>
                             <div class="flex justify-end items-center mt-3">
-                                <span class="text-xs text-gray-300 bg-teal-800/50 px-2 py-0.5 rounded-full">88% Positive</span>
+                                <span class="text-xs text-gray-300 bg-green-800/50 px-2 py-0.5 rounded-full border border-green-700">88% Positive</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Game Card 3: Iron & Horn -->
-                    <div class="flex-shrink-0 w-64 bg-nova-mid rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <!-- Game Card 3 -->
+                    <div class="flex-shrink-0 w-64 bg-nova-mid rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 cursor-pointer border border-gray-800">
                         <img src="https://placehold.co/600x337/8B5CF6/FFFFFF?text=IRON+%26+HORN+RPG" alt="Iron & Horn Thumbnail" class="w-full h-36 object-cover">
                         <div class="p-4">
                             <h3 class="text-lg font-semibold truncate text-white">Iron & Horn</h3>
                             <p class="text-xs text-gray-400 mb-2">Action, RPG</p>
                             <div class="flex justify-end items-center mt-3">
-                                <span class="text-xs text-gray-300 bg-purple-800/50 px-2 py-0.5 rounded-full">91% Positive</span>
+                                <span class="text-xs text-gray-300 bg-purple-800/50 px-2 py-0.5 rounded-full border border-purple-700">91% Positive</span>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Game Card 4: Taxi wars -->
-                    <div class="flex-shrink-0 w-64 bg-nova-mid rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                    <!-- Game Card 4 -->
+                    <div class="flex-shrink-0 w-64 bg-nova-mid rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 cursor-pointer border border-gray-800">
                         <img src="https://placehold.co/600x337/F59E0B/FFFFFF?text=TAXI+WARS+SIM" alt="Taxi wars Thumbnail" class="w-full h-36 object-cover">
                         <div class="p-4">
                             <h3 class="text-lg font-semibold truncate text-white">Taxi wars</h3>
                             <p class="text-xs text-gray-400 mb-2">Simulation, Racing</p>
                             <div class="flex justify-end items-center mt-3">
-                                <span class="text-xs text-gray-300 bg-yellow-800/50 px-2 py-0.5 rounded-full">78% Positive</span>
+                                <span class="text-xs text-gray-300 bg-yellow-800/50 px-2 py-0.5 rounded-full border border-yellow-700">78% Positive</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- 6. DEALS SECTION (Grid Layout) - REMOVED -->
             
         </section>
 
     </main>
     
-    <!-- 7. FOOTER -->
-    <footer class="bg-nova-mid mt-10 p-8">
-        <div class="max-w-7xl mx-auto text-center text-gray-400 text-sm">
-            <p class="mb-2">© 2025 Ngami Game Studios. All rights reserved. All trademarks are property of their respective owners.</p>
-            <div class="space-x-4">
-                <a href="#" class="hover:text-nova-accent">About Us</a>
-                <span class="text-gray-600">|</span>
-                <a href="#" class="hover:text-nova-accent">Privacy Policy</a>
-                <span class="text-gray-600">|</span>
-                <a href="#" class="hover:text-nova-accent">Terms of Service</a>
+    <!-- FOOTER -->
+    <footer class="bg-nova-mid mt-10 p-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="https://i.postimg.cc/2yP9LCmv/Ngami-logo.png" alt="Ngami Play Logo" class="h-6 w-auto mr-3 grayscale opacity-50">
+                <p>© 2025 Ngami Play. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-nova-accent transition duration-150">About Us</a>
+                <a href="#" class="hover:text-nova-accent transition duration-150">Privacy Policy</a>
+                <a href="#" class="hover:text-nova-accent transition duration-150">Terms of Service</a>
             </div>
         </div>
     </footer>
