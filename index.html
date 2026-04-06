@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- PRIMARY SEO / Google Search Results -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/MGZTQj73/Ngami-logoweb.png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/MGZTQj73/Ngami-logoweb.png">
+
     <title id="meta-title">Ngami Game Studios | High-Quality Games & Animation</title>
     <meta name="description" id="meta-desc" content="Ngami Game Studios brings African stories to life through high-quality 3D games and animation. Discover interactive experiences rooted in Tswana culture. Join us in digitizing culture through interactive media.">
     
-    <!-- SEO Keywords / Tags -->
     <meta name="keywords" content="best game developing company in botswana, tswana games, Ngami Game Studios, Mhele, Botswana gaming, African 3D games, digitizing culture, interactive media Botswana">
     <link rel="canonical" href="https://ngamigames.com" />
 
-    <!-- Open Graph (Social Media Sharing) -->
     <meta property="og:title" content="Ngami Game Studios">
     <meta property="og:description" content="Digitizing culture through high-quality 3D games and animation. Discover Tswana strategy and storytelling.">
-    <meta property="og:image" content="https://i.postimg.cc/2yP9LCmv/Ngami-logo.png">
+    <meta property="og:image" content="https://i.postimg.cc/MGZTQj73/Ngami-logoweb.png">
     <meta property="og:url" content="https://ngamigames.com">
 
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind -->
     <script>
         tailwind.config = {
             theme: {
@@ -64,12 +62,14 @@
             from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        .modal-open {
+            overflow: hidden;
+        }
     </style>
 </head>
 
 <body class="bg-nova-dark font-sans text-gray-200 min-h-screen">
 
-    <!-- HEADER / NAVIGATION BAR -->
     <header class="sticky top-0 z-50 bg-nova-mid shadow-lg border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -103,10 +103,7 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT AREA -->
     <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 grid lg:grid-cols-12 gap-8">
-        
-        <!-- SIDEBAR -->
         <aside class="lg:col-span-3 bg-nova-mid rounded-lg p-4 h-fit hidden lg:block border border-gray-800 shadow-xl sticky top-24">
             <h3 class="text-lg font-bold mb-4 text-nova-accent uppercase tracking-widest text-[10px]">Browse</h3>
             <nav class="space-y-2 text-sm">
@@ -130,8 +127,6 @@
         </aside>
 
         <section id="content-area" class="lg:col-span-9 page-transition">
-            
-            <!-- HOME PAGE -->
             <div id="home-page" class="space-y-10">
                 <div class="flex flex-wrap gap-4 text-sm font-semibold justify-center sm:justify-start">
                     <button onclick="showPage('pc-games')" class="px-6 py-2 rounded-full bg-nova-mid border border-gray-600 hover:border-nova-accent hover:text-nova-accent transition">PC Games</button>
@@ -139,7 +134,6 @@
                     <button onclick="showPage('web-games')" class="px-6 py-2 rounded-full bg-nova-mid border border-gray-600 hover:border-nova-accent hover:text-nova-accent transition">Web Games</button>
                 </div>
                 
-                <!-- FEATURED GAME: IRON AND HORN -->
                 <div class="bg-nova-mid p-6 rounded-xl shadow-2xl relative overflow-hidden border border-gray-800">
                     <div class="grid md:grid-cols-3 gap-6 items-center">
                         <div class="md:col-span-2 relative aspect-video rounded-lg overflow-hidden bg-gray-800">
@@ -166,7 +160,6 @@
                 </div>
             </div>
 
-            <!-- PC GAMES PAGE -->
             <div id="pc-games-page" class="hidden space-y-8">
                 <div class="flex items-center space-x-4"><h2 class="text-3xl font-black text-white uppercase italic">PC <span class="text-nova-accent">UNIVERSE</span></h2></div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -181,11 +174,9 @@
                 </div>
             </div>
 
-            <!-- MOBILE GAMES PAGE -->
             <div id="mobile-games-page" class="hidden space-y-8">
                 <div class="flex items-center space-x-4"><h2 class="text-3xl font-black text-white uppercase italic">Mobile <span class="text-nova-accent">Zone</span></h2></div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- MHELE ANDROID -->
                     <div class="bg-nova-mid rounded-xl overflow-hidden border border-gray-800 hover:border-nova-accent transition group">
                         <div class="relative">
                             <img src="https://i.postimg.cc/hGsdXMgj/Mhele.png" class="w-full aspect-video object-cover bg-black">
@@ -200,7 +191,6 @@
                 </div>
             </div>
 
-            <!-- WEB GAMES PAGE -->
             <div id="web-games-page" class="hidden space-y-8">
                 <div class="flex items-center space-x-4"><h2 class="text-3xl font-black text-white uppercase italic">Web <span class="text-nova-accent">Arcade</span></h2></div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -215,7 +205,6 @@
                 </div>
             </div>
 
-            <!-- MHELE GAME DETAILS PAGE -->
             <div id="mhele-details-page" class="hidden space-y-10">
                 <div class="relative w-full rounded-2xl overflow-hidden bg-black border border-gray-800 min-h-[300px] md:aspect-[21/9] shadow-2xl">
                     <img src="https://i.postimg.cc/hGsdXMgj/Mhele.png" class="absolute inset-0 w-full h-full object-cover opacity-40">
@@ -264,19 +253,40 @@
 
     <footer class="bg-nova-mid mt-10 p-8 border-t border-gray-800">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-            <div class="flex items-center mb-4 md:mb-0">
+            <div class="flex items-center mb-6 md:mb-0">
                 <img src="https://i.postimg.cc/2yP9LCmv/Ngami-logo.png" alt="Ngami Game Studios Logo" class="h-6 w-auto mr-3 grayscale opacity-50">
                 <p>© 2025 Ngami Game Studios | Digitizing African Culture</p>
             </div>
-            <div class="flex gap-4">
-                <a href="https://ngamigames.com" class="hover:text-nova-accent transition">ngamigames.com</a>
+            <div class="flex flex-wrap justify-center gap-6">
+                <button onclick="toggleModal('privacy-modal')" class="hover:text-nova-accent transition font-medium">Privacy Policy</button>
+                <button onclick="toggleModal('terms-modal')" class="hover:text-nova-accent transition font-medium">Terms of Use</button>
+                <a href="https://ngamigames.com" class="hover:text-nova-accent transition font-medium">ngamigames.com</a>
             </div>
         </div>
     </footer>
 
     <script>
-        const DEFAULT_DESC = "Ngami Game Studios brings African stories to life through high-quality 3D games and animation. Discover interactive experiences rooted in Tswana culture. Join us in digitizing culture through interactive media.";
+        const DEFAULT_DESC = "Ngami Game Studios brings African stories to life through high-quality 3D games and animation. Discover interactive experiences rooted in Tswana culture.";
         
+        function toggleModal(modalId) {
+            const modal = document.getElementById(modalId);
+            const isHidden = modal.classList.contains('hidden');
+            if (isHidden) {
+                modal.classList.remove('hidden');
+                document.body.classList.add('modal-open');
+            } else {
+                modal.classList.add('hidden');
+                document.body.classList.remove('modal-open');
+            }
+        }
+
+        window.onclick = function(event) {
+            const privModal = document.getElementById('privacy-modal');
+            const termsModal = document.getElementById('terms-modal');
+            if (event.target === privModal) toggleModal('privacy-modal');
+            if (event.target === termsModal) toggleModal('terms-modal');
+        }
+
         function updateSEO(pageId) {
             const title = document.getElementById('meta-title');
             const desc = document.getElementById('meta-desc');
@@ -284,19 +294,15 @@
             switch(pageId) {
                 case 'mhele-details':
                     title.innerText = "Mhele | Tswana Strategy Game | Ngami Game Studios";
-                    desc.setAttribute('content', "Download Mhele for PC and Android. Experience the legendary Tswana strategy game with high-quality 3D visuals and smart AI by Ngami Game Studios.");
+                    desc.setAttribute('content', "Download Mhele for PC and Android. Experience the legendary Tswana strategy game with high-quality 3D visuals.");
                     break;
                 case 'mobile-games':
                     title.innerText = "Mobile Games | Best Game Company Botswana | Ngami Game Studios";
-                    desc.setAttribute('content', "Explore high-quality mobile games from Ngami Game Studios. Download Android APKs for top-tier Tswana gaming experiences.");
+                    desc.setAttribute('content', "Explore high-quality mobile games from Ngami Game Studios.");
                     break;
                 case 'pc-games':
                     title.innerText = "PC Games | High-Quality African Games | Ngami Game Studios";
-                    desc.setAttribute('content', "Premium desktop gaming experiences by Botswana's best game developing company. Explore 3D games rooted in African storytelling.");
-                    break;
-                case 'web-games':
-                    title.innerText = "Web Arcade | Instant Tswana Games | Ngami Game Studios";
-                    desc.setAttribute('content', "Play interactive experiences instantly in your browser. Ngami Game Studios digitizing culture through web-based media.");
+                    desc.setAttribute('content', "Premium desktop gaming experiences by Botswana's best game developing company.");
                     break;
                 default:
                     title.innerText = "Ngami Game Studios | Best Game Developing Company in Botswana";
@@ -317,7 +323,6 @@
             const targetPage = document.getElementById(targetId);
             if (targetPage) targetPage.classList.remove('hidden');
 
-            // Dynamic SEO Update
             updateSEO(pageId);
 
             let hash = '';
